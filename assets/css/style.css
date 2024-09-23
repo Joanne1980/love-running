@@ -95,7 +95,9 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-   
+    /*flexbox for signup page*/
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -200,6 +202,47 @@ Each div will expand to fill the available space on its row*/
 
 }
 
+/* Sign up page*/
+
+#signup {
+    background: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+#signup h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+.text-input {
+  background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px, solid, #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
+}
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* footer */
 #social-networks {
     text-align: center;
@@ -278,6 +321,8 @@ Each div will expand to fill the available space on its row*/
     #photos {
         column-count: 3;
     }
+
+    /* Sign up page*/
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
