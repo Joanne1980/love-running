@@ -1,6 +1,7 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-         
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -19,7 +20,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -32,9 +35,9 @@ h1, h2, h3 {
 
 /* header */
 header {
-    background-color:#ffffff;   
+    background-color: #ffffff;
     padding: 0 1rem;
-    position: fixed; 
+    position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
@@ -57,7 +60,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -111,7 +114,7 @@ main {
 
 /* Final rgba value sets the opacity so it is semi-treansparent */
 #cover-text {
-    background-color:rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, .7);
     Font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -121,8 +124,9 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
-    color:#ffffff;
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
 }
 
 /* Reasons to love running section*/
@@ -130,21 +134,25 @@ main {
     width: 90%;
     margin: 20px auto;
 }
+
 #reasons h2 {
     font-size: 280%;
     margin-bottom: 20px;
     text-align: center;
 }
+
 #benefits p {
     padding: 0 20px;
-    
+
 }
+
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
-#benefits-physical > div,
-#benefits-mental > div {
+
+#benefits-physical>div,
+#benefits-mental>div {
     margin-bottom: 20px;
     line-height: 20px;
 }
@@ -175,20 +183,21 @@ main {
 }
 
 #times div {
-  color: #fafafa;
-  background-color: rgba(0, 0, 0, .6);
-  padding: 15px;
-  text-align: center;
-/* This will not wrap on screens of less than 400px wide.
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
 Each div will expand to fill the available space on its row*/
-  flex-basis: 200px;
-  flex-grow: 1;
-  /* Creates a grid of meetup times over the background images*/
-  border: 2px solid white;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup times over the background images*/
+    border: 2px solid white;
 }
+
 #times h3 {
     /* Override the heading color set in general styles */
-    color:#fafafa;
+    color: #fafafa;
 }
 
 /* Gallery page*/
@@ -211,17 +220,20 @@ Each div will expand to fill the available space on its row*/
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 }
-#signup-form> h2 {
+
+#signup-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
+
 #signup-form {
     color: #ffffff;
     background-color: rgba(60, 60, 60, .6);
     padding: 30px;
 }
+
 .text-input {
-  background: transparent;
+    background: transparent;
     color: #fafafa;
     width: 100%;
     height: 25px;
@@ -230,6 +242,7 @@ Each div will expand to fill the available space on its row*/
     border-radius: 2px;
     padding: 0 5px;
 }
+
 .join-button {
     border-radius: 2px;
     background-color: #454b1b;
@@ -238,6 +251,7 @@ Each div will expand to fill the available space on its row*/
     margin-top: 20px;
     padding: 15px 32px;
 }
+
 .radio-buttons {
     width: 100%;
     display: flex;
@@ -252,21 +266,25 @@ Each div will expand to fill the available space on its row*/
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media query: large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
     #photos {
         column-count: 2;
         column-gap: 0;
     }
-    
+
 }
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -280,7 +298,7 @@ Each div will expand to fill the available space on its row*/
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -295,9 +313,9 @@ Each div will expand to fill the available space on its row*/
     }
 
     /* Main content*/
-    main{
-    /* Push main content down to accommodate larger header */
-    margin-top: 79px;
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
     }
 
     /* Hero */
@@ -305,20 +323,24 @@ Each div will expand to fill the available space on its row*/
         width: 300px;
         right: 50px;
     }
+
     #benefits-physical,
     #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    #benefits-physical > div,
-    #benefits-mental >div {
-        width: 75%;    
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
     }
-    #benefits-mental >div {
+
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
+
     #photos {
         column-count: 3;
     }
@@ -328,57 +350,62 @@ Each div will expand to fill the available space on its row*/
         background-position: center;
         position: relative;
     }
+
     #signup-form {
         position: absolute;
         max-width: 400px;
         top: 150px;
         left: 10%;
     }
+
     .join-button:hover {
         background-color: #fafafa;
         color: #454b1b;
     }
+
     .text-input:hover {
-        border-color: #f16c6b;    
+        border-color: #f16c6b;
     }
 
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
-  }  
-  #photos {
-    column-count: 4;
-  }
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos {
+        column-count: 4;
+    }
 }
 
 /* Larger devices (desktops, 1200px and wider) */
 @media screen and (min-width: 1200px) {
+
     /* Reasons section */
-   #benefits {
-    display: flex;
-    flex-direction: row;
-   }
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
-   #benefits > div {
-    flex: 1;
-   }
+    #benefits>div {
+        flex: 1;
+    }
 
-   #benefits-image {
-    order: 0;
-   }
+    #benefits-image {
+        order: 0;
+    }
 
-   #benefits-mental {
-    order: 1;
-   }
+    #benefits-mental {
+        order: 1;
+    }
 
-   #benefits-mental > div {
-    align-self: flex-start;
-   }
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
 
-   #benefits-physical > div {
-    align-self: flex-end;
-   }
+    #benefits-physical>div {
+        align-self: flex-end;
+    }
 }
