@@ -1,10 +1,16 @@
 ---
 name: User Story
 about: This is our default user story
-title: Submitting answer
+title: User story 
 labels: ''
 assignees: ''
 
 ---
 
-In order to give my opinion as a user I can select and submit my answer
+"in order" "as a" "I can"
+"As a" "I can" "so that"
+
+In order to receive benefit as a role, I can goal/desire:
+
+##Acceptance Criteria:
+
